@@ -60,7 +60,7 @@ class DataService {
 client.interceptors.request.use((config) => {
   const requestConfig = config;
   const { headers } = config;
-  const accessToken = getItem("access_token");
+  const accessToken = getItem("panteon_access_token");
   requestConfig.headers = {
     ...headers,
     token: accessToken ? `${accessToken}` : "",

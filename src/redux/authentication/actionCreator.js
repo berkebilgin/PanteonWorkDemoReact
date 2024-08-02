@@ -20,7 +20,7 @@ const Login = (data) => {
           });
         });
       } else {
-        Cookies.set("access_token", response.data.model.token);
+        Cookies.set("panteon_access_token", response.data.model.token);
         Cookies.set("userId", response.data.model.userId);
         localStorage.clear();
         dispatch(loginSuccess(response.data.model.token));
@@ -35,7 +35,7 @@ const Login = (data) => {
 
 const Logout = () => {
   return async (dispatch) => {
-    Cookies.set("access_token", "");
+    Cookies.set("panteon_access_token", "");
     Cookies.set("userId", "");
     localStorage.clear();
     dispatch(logoutSuccess());

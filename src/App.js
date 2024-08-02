@@ -25,7 +25,7 @@ function ProviderConfig() {
   return (
     <>
       <Router basename={process.env.PUBLIC_URL}>
-        {Cookies.get("access_token") ? (
+        {Cookies.get("panteon_access_token") ? (
           <Routes>
             <Route path="/*" element={<BuildingList />} />
           </Routes>
