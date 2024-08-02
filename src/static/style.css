@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button.ant-btn-primary {
+  background-color: #f26724 !important;
+}
+button.ant-btn-primary:hover {
+  background-color: #db6025 !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mx-32 {
+  margin: 32px 0;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.ant-input-number {
+  width: 100%;
+}
